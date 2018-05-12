@@ -15,7 +15,7 @@ public class BDCore extends SQLiteOpenHelper{
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("create table focoEndemias(id integer primary key " +
+        db.execSQL("create table focoEndemia(id integer primary key " +
                 "autoincrement, " +
                 "numeroAmostra varchar(200)," +
                 "deposito varchar(100))");

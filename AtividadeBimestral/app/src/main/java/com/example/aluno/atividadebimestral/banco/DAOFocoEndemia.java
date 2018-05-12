@@ -53,7 +53,7 @@ public class DAOFocoEndemia {
             focoEndemia.setId(cursor.getInt(0));
             focoEndemia.setNumeroAmostra(cursor.getString(1));
             focoEndemia.setDeposito(cursor.getString(2));
-            focoEndemia.add(focoEndemia);
+            focoEndemias.add(focoEndemia);
             cursor.moveToNext();
         }
         return focoEndemias;

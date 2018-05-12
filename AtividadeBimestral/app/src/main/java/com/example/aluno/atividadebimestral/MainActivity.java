@@ -28,8 +28,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     @Override
     protected void onStart() {
         super.onStart();
-        List<FocoEndemia> listaLancamentos = new DAOFocoEndemia(this).consultar();
-        AdapterFocoEndemia adapterFocoEndemia = new AdapterFocoEndemia(this, listaLancamentos);
+        List<FocoEndemia> listaFocoEndemia = new DAOFocoEndemia(this).consultar();
+        AdapterFocoEndemia adapterFocoEndemia = new AdapterFocoEndemia(this, listaFocoEndemia);
         listView.setAdapter(adapterFocoEndemia);
     }
 
