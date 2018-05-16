@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         final long idExcluir = id;
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage("Deseja Excluir o Registro??")
+        builder.setMessage("Deseja excluir o registro?")
                 .setPositiveButton("Sim", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         daoFocoEndemia.excluir(Integer.parseInt(String.valueOf(idExcluir)));

@@ -26,10 +26,10 @@ public class DAOFocoEndemia {
         ContentValues values = new ContentValues();
         values.put("numeroAmostra",focoEndemia.getNumeroAmostra());
         values.put("deposito", focoEndemia.getDeposito());
-        database.insert("focoEndemia", null, values);
+        database.insert("focoEndemias", null, values);
     }
     public void excluir(Integer id){
-        database.delete("focoEndemia","id=?",
+        database.delete("focoEndemias","id=?",
                 new String[]{String.valueOf(id)});
 
         //database.delete("lancamentos","id="+id,null);
@@ -38,7 +38,7 @@ public class DAOFocoEndemia {
         ContentValues values = new ContentValues();
         values.put("numeroAmostra",focoEndemia.getNumeroAmostra());
         values.put("deposito", focoEndemia.getDeposito());
-        database.update("focoEndemia",values,
+        database.update("focoEndemias",values,
                 "id="+focoEndemia.getId(),null);
     }
     public List<FocoEndemia> consultar(){
@@ -62,7 +62,7 @@ public class DAOFocoEndemia {
     public FocoEndemia buscarPorId(Integer id){
         FocoEndemia focoEndemia = new FocoEndemia();
         String[] colunas = {"id", "numeroAmostra", "deposito"};
-        Cursor cursor = database.query("focoEndemia", colunas,
+        Cursor cursor = database.query("focoEndemias", colunas,
                 "id="+id,null,null,null,
                 null);
         cursor.moveToFirst();
