@@ -22,7 +22,7 @@ public class DAOFocoEndemia {
     }
 
     public void inserir(FocoEndemia focoEndemia){
-        Log.i("DAOLancamentos",focoEndemia.getNumeroAmostra());
+        //Log.i("DAOLancamentos",focoEndemia.getNumeroAmostra());
         ContentValues values = new ContentValues();
         values.put("numeroAmostra",focoEndemia.getNumeroAmostra());
         values.put("numeroCasa",focoEndemia.getNumeroCasa());

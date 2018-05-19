@@ -45,6 +45,8 @@ public class AdapterFocoEndemia extends BaseAdapter {
         FocoEndemia focoEndemia = (FocoEndemia) getItem(position);
 
         textViewNumeroAmostra.setText(focoEndemia.getNumeroAmostra());
+        textViewNumeroCasa.setText(focoEndemia.getNumeroCasa());
+        textViewQtdeLarvas.setText(focoEndemia.getQtdeLarvas());
         textViewDeposito.setText(focoEndemia.getDeposito());
 
         return viewLinha;

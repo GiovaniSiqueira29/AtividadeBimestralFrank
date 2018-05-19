@@ -12,6 +12,7 @@ import com.example.aluno.atividadebimestral.banco.DAOFocoEndemia;
 public class TelaCadastrarFoco extends AppCompatActivity {
 
     FocoEndemia focoEndemia = new FocoEndemia();
+
     EditText editTextNumeroAmostra;
     EditText editTextNumeroCasa;
     EditText editTextQtdelarvas;
@@ -41,8 +42,8 @@ public class TelaCadastrarFoco extends AppCompatActivity {
 
     public void inserir(View view){
         focoEndemia.setNumeroAmostra(editTextNumeroAmostra.getText().toString());
-        focoEndemia.setNumeroCasa(editTextNumeroAmostra.getText().toString());
-        focoEndemia.setQtdeLarvas(editTextNumeroAmostra.getText().toString());
+        focoEndemia.setNumeroCasa(editTextNumeroCasa.getText().toString());
+        focoEndemia.setQtdeLarvas(editTextQtdelarvas.getText().toString());
         focoEndemia.setDeposito(editTextDeposito.getText().toString());
         if(focoEndemia.getId()==null) {
             new DAOFocoEndemia(this).inserir(focoEndemia);

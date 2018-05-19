@@ -13,11 +13,10 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="DIGITE O NÚMERO DA AMOSTRA:"
-        android:textStyle="bold"
+        android:text="DIGITE O NÚMERO DA CASA:"
         android:textColor="#000000"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -31,9 +30,8 @@
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <TextView
         android:id="@+id/textView2"
@@ -43,10 +41,9 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="TIPO DE DEPÓSITO EMCONTRADO:"
-        android:textStyle="bold"
         android:textColor="#000000"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editQtdeLarvas" />
 
@@ -60,7 +57,6 @@
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
@@ -85,12 +81,12 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="DIGITE O NÚMERO DA CASA:"
-        android:textStyle="bold"
+        android:text="DIGITE O NÚMERO DA AMOSTRA:"
         android:textColor="#000000"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editNumeroAmostra" />
+        app:layout_constraintTop_toBottomOf="@+id/editNumeroCasa" />
 
     <EditText
         android:id="@+id/editNumeroCasa"
@@ -103,7 +99,7 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
         android:id="@+id/editQtdeLarvas"
@@ -126,9 +122,9 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="DIGITE A QUANTIDADE DE LARVAS:"
-        android:textStyle="bold"
         android:textColor="#000000"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editNumeroCasa" />
+        app:layout_constraintTop_toBottomOf="@+id/editNumeroAmostra" />
 </android.support.constraint.ConstraintLayout>

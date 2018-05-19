@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".TelaCadastrarFoco" />
         <activity android:name=".ConsultarDosagem" />
-        <activity android:name=".TelaCalcularIndicesEpidemologicos"></activity>
+        <activity android:name=".TelaCalcularIndicesEpidemologicos" />
+        <activity android:name=".TelaCalcularIndicePredial"></activity>
     </application>
 
 </manifest>
