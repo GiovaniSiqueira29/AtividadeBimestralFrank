@@ -13,12 +13,16 @@ public class BDCore extends SQLiteOpenHelper{
         super(context, NOME_BANCO, null, VERSAO_BANCO);
     }
 
+
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL("create table focoEndemias(id integer primary key " +
                 "autoincrement, " +
                 "numeroAmostra varchar(200)," +
+                "numeroCasa varchar(200)," +
+                "qtdeLarvas varchar(100)," +
                 "deposito varchar(100))");
+        //db.execSQL();
     }
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {

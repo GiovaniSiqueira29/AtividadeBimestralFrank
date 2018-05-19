@@ -16,7 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TelaCadastrarFoco"></activity>
+        <activity android:name=".TelaCadastrarFoco" />
+        <activity android:name=".ConsultarDosagem" />
+        <activity android:name=".TelaCalcularIndicesEpidemologicos"></activity>
     </application>
 
 </manifest>

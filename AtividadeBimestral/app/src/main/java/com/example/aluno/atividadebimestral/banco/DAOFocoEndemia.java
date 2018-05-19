@@ -25,6 +25,8 @@ public class DAOFocoEndemia {
         Log.i("DAOLancamentos",focoEndemia.getNumeroAmostra());
         ContentValues values = new ContentValues();
         values.put("numeroAmostra",focoEndemia.getNumeroAmostra());
+        values.put("numeroCasa",focoEndemia.getNumeroCasa());
+        values.put("qtdeLarvas", focoEndemia.getQtdeLarvas());
         values.put("deposito", focoEndemia.getDeposito());
         database.insert("focoEndemias", null, values);
     }
@@ -37,13 +39,15 @@ public class DAOFocoEndemia {
     public void alterar(FocoEndemia focoEndemia){
         ContentValues values = new ContentValues();
         values.put("numeroAmostra",focoEndemia.getNumeroAmostra());
+        values.put("numeroCasa",focoEndemia.getNumeroCasa());
+        values.put("qtdeLarvas", focoEndemia.getQtdeLarvas());
         values.put("deposito", focoEndemia.getDeposito());
         database.update("focoEndemias",values,
                 "id="+focoEndemia.getId(),null);
     }
     public List<FocoEndemia> consultar(){
         List<FocoEndemia> focoEndemias = new ArrayList<>();
-        String[] colunas = {"id", "numeroAmostra", "deposito"};
+        String[] colunas = {"id", "numeroAmostra","numeroCasa", "qtdeLarvas", "deposito"};
         Cursor cursor = database.query("focoEndemias", colunas,
                 null,null,null,null,
                 null);
@@ -52,7 +56,9 @@ public class DAOFocoEndemia {
             FocoEndemia focoEndemia = new FocoEndemia();
             focoEndemia.setId(cursor.getInt(0));
             focoEndemia.setNumeroAmostra(cursor.getString(1));
-            focoEndemia.setDeposito(cursor.getString(2));
+            focoEndemia.setNumeroCasa(cursor.getString(2));
+            focoEndemia.setQtdeLarvas(cursor.getString(3));
+            focoEndemia.setDeposito(cursor.getString(4));
             focoEndemias.add(focoEndemia);
             cursor.moveToNext();
         }
@@ -61,7 +67,7 @@ public class DAOFocoEndemia {
 
     public FocoEndemia buscarPorId(Integer id){
         FocoEndemia focoEndemia = new FocoEndemia();
-        String[] colunas = {"id", "numeroAmostra", "deposito"};
+        String[] colunas = {"id", "numeroAmostra", "numeroCasa", "qtdeLarvas", "deposito"};
         Cursor cursor = database.query("focoEndemias", colunas,
                 "id="+id,null,null,null,
                 null);
@@ -69,7 +75,9 @@ public class DAOFocoEndemia {
         if(cursor.getCount()>0){
             focoEndemia.setId(cursor.getInt(0));
             focoEndemia.setNumeroAmostra(cursor.getString(1));
-            focoEndemia.setDeposito(cursor.getString(2));
+            focoEndemia.setNumeroCasa(cursor.getString(2));
+            focoEndemia.setQtdeLarvas(cursor.getString(3));
+            focoEndemia.setDeposito(cursor.getString(4));
         }
         return focoEndemia;
     }

@@ -38,6 +38,16 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         startActivity(intent);
     }
 
+    public void chamarConsultarDosagem(View view){
+        Intent intent = new Intent(this, ConsultarDosagem.class);
+        startActivity(intent);
+    }
+
+    public void chamarTelaCalcularIndicesEpidemologicos(View view){
+        Intent intent = new Intent(this, TelaCalcularIndicesEpidemologicos.class);
+        startActivity(intent);
+    }
+
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         Intent intent = new Intent(this, TelaCadastrarFoco.class);

@@ -4,7 +4,21 @@
     android:layout_height="match_parent">
 
     <TextView
+        android:id="@+id/textNumeroCasa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="TextView" />
+
+    <TextView
         android:id="@+id/textNumeroAmostra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textQtdeLarvas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"

@@ -37,6 +37,8 @@ public class AdapterFocoEndemia extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         View viewLinha = LayoutInflater.from(contexto).inflate(R.layout.linha_lista_foco_endemias, parent, false);
         TextView textViewNumeroAmostra = (TextView) viewLinha.findViewById(R.id.textNumeroAmostra);
+        TextView textViewNumeroCasa = (TextView) viewLinha.findViewById(R.id.textNumeroCasa);
+        TextView textViewQtdeLarvas = (TextView) viewLinha.findViewById(R.id.textQtdeLarvas);
         TextView textViewDeposito = (TextView) viewLinha.findViewById(R.id.textDeposito);
 
 
