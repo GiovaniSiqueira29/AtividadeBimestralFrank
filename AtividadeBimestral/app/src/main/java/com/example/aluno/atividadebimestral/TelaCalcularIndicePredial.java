@@ -25,8 +25,10 @@ public class TelaCalcularIndicePredial extends AppCompatActivity {
 
         resultadoIndice = valor1 / valor2;
 
-        if(resultadoIndice < 1.){
+        if(resultadoIndice < 0.5){
             Toast.makeText(this, "O seu índice de infestação é: "+resultadoIndice*100+"%", Toast.LENGTH_LONG).show();
+        }else if(resultadoIndice > 0.5 && resultadoIndice < 0.8){
+            Toast.makeText(this, "ATENÇÃO! O seu índice de infestação é: "+resultadoIndice*100+"%", Toast.LENGTH_LONG).show();
         }else{
             Toast.makeText(this, "ALERTA! O seu índice de infestação é: "+resultadoIndice*100+"%", Toast.LENGTH_LONG).show();
         }

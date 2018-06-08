@@ -15,6 +15,7 @@
         android:layout_marginTop="8dp"
         android:onClick="chamarTelaCalcularIndicePredial"
         android:text="Índice de Infestação predial"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -27,6 +28,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Índice de Breteau"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button5" />
@@ -39,6 +41,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Índice de Recipiente"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button6" />
@@ -51,6 +54,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Índice do Tipo de Recipiente Predominante"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button7" />
@@ -63,6 +67,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Índice de Pendência"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button8" />
@@ -75,6 +80,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Nº de pontos estratégicos(previsto)"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button9" />
@@ -87,6 +93,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Nº de de Armadilhas (Ovitrampas)"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button10" />

@@ -26,6 +26,7 @@
         android:layout_marginStart="8dp"
         android:onClick="chamarTelaCadastrar"
         android:text="Cadastrar Focos"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -39,6 +40,7 @@
         android:layout_marginStart="8dp"
         android:onClick="chamarConsultarDosagem"
         android:text="Consultar Dosagem"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -52,6 +54,7 @@
         android:layout_marginStart="8dp"
         android:onClick="chamarTelaCalcularIndicesEpidemologicos"
         android:text="Calcular Indicadores Epidemológicos"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
