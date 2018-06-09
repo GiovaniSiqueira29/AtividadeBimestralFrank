@@ -4,11 +4,23 @@
     android:layout_height="match_parent">
 
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Casa:" />
+
+    <TextView
         android:id="@+id/textNumeroCasa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:text="TextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Amostra:" />
 
     <TextView
         android:id="@+id/textNumeroAmostra"
@@ -18,11 +30,23 @@
         android:text="TextView" />
 
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Larvas:" />
+
+    <TextView
         android:id="@+id/textQtdeLarvas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:text="TextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Deposito:" />
 
     <TextView
         android:id="@+id/textDeposito"
