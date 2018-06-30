@@ -21,29 +21,31 @@
             android:background="#FFFFFF"
             android:textColor="#000000"/>
     </TableRow>
+
     <TableRow
-        android:layout_height="wrap_content"
         android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
         android:gravity="center_horizontal">
+
         <TextView
             android:id="@+id/TextView01"
-            android:text="Temephos"
-            android:textAlignment="center"
             android:layout_weight="1"
             android:background="#bfbfbf"
-            android:textColor="#000000"
+            android:gravity="center"
             android:padding="18dip"
-            android:gravity="center"/>
+            android:text="Temephos"
+            android:textAlignment="center"
+            android:textColor="#000000" />
 
         <TextView
             android:id="@+id/TextView02"
-            android:text="1 grama/10 litros de água"
-            android:textAlignment="center"
             android:layout_weight="1"
             android:background="#bfbfbf"
-            android:textColor="#000000"
+            android:gravity="center"
             android:padding="18dip"
-            android:gravity="center"/>
+            android:text="1 grama/10 litros de água"
+            android:textAlignment="center"
+            android:textColor="#000000" />
     </TableRow>
     <TableRow
         android:layout_height="wrap_content"

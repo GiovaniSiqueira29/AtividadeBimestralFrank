@@ -43,6 +43,11 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         startActivity(intent);
     }
 
+    public void chamarTelaAjuda(View view){
+        Intent intent = new Intent(this, TelaAjuda.class);
+        startActivity(intent);
+    }
+
     public void chamarTelaCalcularIndicesEpidemologicos(View view){
         Intent intent = new Intent(this, TelaCalcularIndicesEpidemologicos.class);
         startActivity(intent);

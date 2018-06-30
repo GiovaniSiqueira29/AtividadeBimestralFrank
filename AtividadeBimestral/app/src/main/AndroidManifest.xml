@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.aluno.atividadebimestral">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -19,7 +21,8 @@
         <activity android:name=".TelaCadastrarFoco" />
         <activity android:name=".ConsultarDosagem" />
         <activity android:name=".TelaCalcularIndicesEpidemologicos" />
-        <activity android:name=".TelaCalcularIndicePredial"></activity>
+        <activity android:name=".TelaCalcularIndicePredial" />
+        <activity android:name=".TelaAjuda"></activity>
     </application>
 
 </manifest>
