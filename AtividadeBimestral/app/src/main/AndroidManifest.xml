@@ -22,7 +22,8 @@
         <activity android:name=".ConsultarDosagem" />
         <activity android:name=".TelaCalcularIndicesEpidemologicos" />
         <activity android:name=".TelaCalcularIndicePredial" />
-        <activity android:name=".TelaAjuda"></activity>
+        <activity android:name=".TelaAjuda" />
+        <activity android:name=".CadastroPessoa"></activity>
     </application>
 
 </manifest>

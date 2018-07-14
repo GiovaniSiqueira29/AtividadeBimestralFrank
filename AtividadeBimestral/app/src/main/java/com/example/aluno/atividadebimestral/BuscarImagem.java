@@ -20,8 +20,6 @@ public class BuscarImagem extends AsyncTask<String, Integer, Bitmap> {
 
     @Override
     protected Bitmap doInBackground(String... strings) {
-        //Na primeira posição (strings[0]) estará o endereço da imagem
-        //que vamos buscar
         Bitmap imagem = null;
 
         try {

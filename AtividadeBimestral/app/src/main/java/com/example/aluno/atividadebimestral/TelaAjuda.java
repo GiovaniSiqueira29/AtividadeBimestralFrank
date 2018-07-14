@@ -14,6 +14,6 @@ public class TelaAjuda extends AppCompatActivity {
 
     public void buscarImagem(View view){
         BuscarImagem buscarImagem = new BuscarImagem(this);
-        buscarImagem.execute("https://aldoadv.files.wordpress.com/2008/04/dengue-prevencao.jpg");
+        buscarImagem.execute("http://mariaimaculada.br/wp-content/uploads/dengue_cuidados.jpg");
     }
 }

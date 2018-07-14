@@ -16,4 +16,8 @@ public class TelaCalcularIndicesEpidemologicos extends AppCompatActivity {
         Intent intent = new Intent(this, TelaCalcularIndicePredial.class);
         startActivity(intent);
     }
+    public void chamarTelaCadastroPessoa(View view){
+        Intent intent = new Intent(this, CadastroPessoa.class);
+        startActivity(intent);
+    }
 }
